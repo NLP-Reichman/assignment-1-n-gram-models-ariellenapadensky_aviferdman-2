@@ -2,28 +2,8 @@
   "test_link": {
     "link": null
   },
-  "test_preprocess": {
-    "vocab_length": 2
-  },
-  "test_build_lm": {
-    "english_2_gram_length": 0,
-    "english_3_gram_length": 0,
-    "french_3_gram_length": 0,
-    "spanish_3_gram_length": 0
-  },
-  "test_eval": {
-    "en_on_en": 0,
-    "en_on_fr": 0,
-    "en_on_tl": 0,
-    "en_on_nl": 0
-  },
-  "test_generate": {
-    "english_2_gram": "I am",
-    "english_3_gram": "I am",
-    "english_4_gram": "I Love",
-    "spanish_2_gram": "Soy",
-    "spanish_3_gram": "Soy",
-    "french_2_gram": "Je suis",
-    "french_3_gram": "Je suis"
-  }
+  "test_preprocess": "NameError(\"name 'vocab_set' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 11, in test_preprocess\n    'vocab_length': len(preprocess()),\n                        ^^^^^^^^^^^^\n  File \"/tmp/ipykernel_5336/1324098056.py\", line 29, in preprocess\n    vocab = [\"<start>\", \"<end>\"] + sorted(ch for ch in vocab_set)\n                                                       ^^^^^^^^^\nNameError: name 'vocab_set' is not defined\n",
+  "test_build_lm": "NameError(\"name 'vocab_set' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 16, in test_build_lm\n    'english_2_gram_length': len(build_lm('en', 2, True)),\n                                 ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_5336/2852851018.py\", line 12, in build_lm\n    V = len(preprocess())\n            ^^^^^^^^^^^^\n  File \"/tmp/ipykernel_5336/1324098056.py\", line 29, in preprocess\n    vocab = [\"<start>\", \"<end>\"] + sorted(ch for ch in vocab_set)\n                                                       ^^^^^^^^^\nNameError: name 'vocab_set' is not defined\n",
+  "test_eval": "NameError(\"name 'vocab_set' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 23, in test_eval\n    lm = build_lm('en', 3, True)\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_5336/2852851018.py\", line 12, in build_lm\n    V = len(preprocess())\n            ^^^^^^^^^^^^\n  File \"/tmp/ipykernel_5336/1324098056.py\", line 29, in preprocess\n    vocab = [\"<start>\", \"<end>\"] + sorted(ch for ch in vocab_set)\n                                                       ^^^^^^^^^\nNameError: name 'vocab_set' is not defined\n",
+  "test_generate": "NameError(\"name 'random' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 48, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5336/2957777135.py\", line 33, in test_generate\n    'english_2_gram': generate('en', 2, \"I am\", 20, 5),\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_5336/1636222753.py\", line 13, in generate\n    random.seed(r)\n    ^^^^^^\nNameError: name 'random' is not defined. Did you forget to import 'random'\n"
 }
