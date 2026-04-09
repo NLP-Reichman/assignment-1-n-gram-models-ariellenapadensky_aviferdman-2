@@ -3,7 +3,7 @@
     "link": null
   },
   "test_preprocess": {
-    "vocab_length": 1805
+    "vocab_length": 1804
   },
   "test_build_lm": {
     "english_2_gram_length": 747,
